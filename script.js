@@ -13,6 +13,12 @@ console.log(crimeslist)
 
 let xD = 2
 
+let xD1 = 3
+let xD2 = 4
+let xD3 = 5
+let xD4 = 6
+
+
 function closeAll(){
     $('.home').hide()
     $('.cars').hide()
