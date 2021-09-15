@@ -11,6 +11,8 @@ var requestjson = fetch("config/cfg.json")
 
 console.log(crimeslist)
 
+let xD = 2
+
 function closeAll(){
     $('.home').hide()
     $('.cars').hide()
