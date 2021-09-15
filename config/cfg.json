@@ -1,0 +1,114 @@
+{
+    "cdpenal": [
+        {
+        "type": "1",
+        "crimes": [
+                {
+                "name": "Ocultação de Face",
+                "fine": 17000,
+                "time": 0
+                },
+                {
+                    "name": "Atentado ao Pudor / Ato Obsceno",
+                    "fine": 15000,
+                    "time": 20
+                },
+                {
+                    "name": "Corridas ilegais",
+                    "fine": 10000,
+                    "time": 50
+                },
+                {
+                    "name": "Perturbação da Paz",
+                    "fine": 5000,
+                    "time": 15
+                },
+                {
+                    "name": "Exercício Ilegal da Profissão",
+                    "fine": 10000,
+                    "time": 20
+                },
+                {
+                    "name": "Falsidade ideológica",
+                    "fine": 8000,
+                    "time": 25
+                },
+                {
+                    "name": "Ameaça",
+                    "fine": 5000,
+                    "time": 15
+                },
+                {
+                    "name": "Incitação",
+                    "fine": 20000,
+                    "time": 45
+                },
+                {
+                    "name": "Má Utilização do Porte",
+                    "fine": 25000,
+                    "time": 0
+                },
+                {
+                    "name": "Utilização de telefone-celular no Presídio de Long Beach",
+                    "fine": 5000,
+                    "time": 15
+                }
+            ]
+        },
+        {
+            "type": "2",
+            "crimes": [
+                    {
+                    "name": "Ocultação de Face",
+                    "fine": 17000,
+                    "time": 0
+                    },
+                    {
+                        "name": "Atentado ao Pudor / Ato Obsceno",
+                        "fine": 15000,
+                        "time": 20
+                    },
+                    {
+                        "name": "Corridas ilegais",
+                        "fine": 10000,
+                        "time": 50
+                    },
+                    {
+                        "name": "Perturbação da Paz",
+                        "fine": 5000,
+                        "time": 15
+                    },
+                    {
+                        "name": "Exercício Ilegal da Profissão",
+                        "fine": 10000,
+                        "time": 20
+                    },
+                    {
+                        "name": "Falsidade ideológica",
+                        "fine": 8000,
+                        "time": 25
+                    },
+                    {
+                        "name": "Ameaça",
+                        "fine": 5000,
+                        "time": 15
+                    },
+                    {
+                        "name": "Incitação",
+                        "fine": 20000,
+                        "time": 45
+                    },
+                    {
+                        "name": "Má Utilização do Porte",
+                        "fine": 25000,
+                        "time": 0
+                    },
+                    {
+                        "name": "Utilização de telefone-celular no Presídio de Long Beach",
+                        "fine": 5000,
+                        "time": 15
+                    }
+                ]
+            }
+    ]
+}

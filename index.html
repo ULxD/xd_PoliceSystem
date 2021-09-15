@@ -1,0 +1,258 @@
+<html>
+    <head>
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" type="text/css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <!--TABLET ESTRUTURA-->
+        <div class="bkg">
+            <div class="tabletbordermain" style="display: auto;">
+                <div class="tabletborder">
+                    <div class="tabletbox">
+                    <!--TABLET CONTENT -->
+                    <div class="home">
+                        <ul>
+                            <li onclick="register()">
+                                <i class="fas fa-address-book"></i>
+                                <h1>Registros</h1>
+                            </li>
+                            <li onclick="cars()">
+                                <i class="fas fa-car"></i>
+                                <h1>Veiculos</h1>
+                            </li>
+                            <li onclick="divisions()">
+                                <i class="fas fa-clock"></i>
+                                <h1>Recentes</h1>
+                            </li>
+                            <li onclick="prision()">
+                                <i class="fas fa-user-lock"></i>
+                                <h1>Prender</h1>
+                            </li>
+                            <li onclick="fine()">
+                                <i class="fas fa-file-alt"></i>
+                                <h1>Multar</h1>
+                            </li>
+                            <li onclick="warnings()">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <h1>Aviso</h1>
+                            </li>
+                        </ul>
+                    </div>
+                    <!--APPS-->
+                    <div class="registers app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Registros</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        <main>
+                            <div class="searchbox" style="display: none;">
+                                <h1>Passaporte</h1>
+                                <input type="text">
+                                <i class="fas fa-search" onclick="SearchRegister()"></i>
+                            </div>
+
+                            <div class="spinner-border .text-primary" role="status" style="display: none;">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+
+                              <main class="contentmain" style="display: auto;">
+                                  <div class="top">
+                                    <img src="https://media.discordapp.net/attachments/865643876274798644/884327385661599744/unknown.png?" alt="">
+                                    <h2>José Pistoleiro</h2>
+                                    <h3>23 Anos</h3>
+                                  </div>
+                                  <div class="content">
+                                    <div class="leftbox">
+                                        <div class="buttons">
+                                          <div class="info button" onclick="BoxInfos()">Informações</div>
+                                          <div class="prisonlist button" onclick="PrisionsInfos()">Prisões</div>
+                                          <div class="finelist button" onclick="FineInfos()">Multas</div>
+                                          <div class="warninglist button" onclick="WarningInfos()">Avisos</div> 
+                                        </div>
+                                    </div>
+                                    <div class="boxinfos" style="display: none;">
+                                        <div class="leftinfos">
+                                            <h4>Passaporte: <span> 12</span> </h4>
+                                            <h4>Identidade:<span> BRANBRAN</span></h4>
+                                            <h4>Porte de Armas:<span> Sim</span></h4>
+                                        </div>
+                                        <div class="rightinfos">
+                                            <h4>Avisos:<span> 2</span></h4>
+                                            <h4>Prisões:<span> 12</span></h4>
+                                            <h4>Multas:<span> 10002</span></h4>
+                                        </div>
+                                    </div>
+                                    <div class="prisioninfos" style="display: none;">
+                                        <header>
+                                            <h1>DATA</h1>
+                                            <h1>TEMPO</h1>
+                                            <h1>CRIMES</h1>
+                                            <h1>OFICIAL</h1>
+                                        </header>
+                                        <ul>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">20 Meses</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="fineinfos" style="display: none;">
+                                        <header>
+                                            <h1>DATA</h1>
+                                            <h1>VALOR</h1>
+                                            <h1>MOTIVO</h1>
+                                            <h1>OFICIAL</h1>
+                                        </header>
+                                        <ul>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2> <h2 class="time">$20.000</h2> <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+                                    <div class="warninginfos" style="display: auto;">
+                                        <header>
+                                            <h1>DATA</h1>
+                                            <h1>MOTIVOS</h1>
+                                            <h1>OFICIAL</h1>
+                                        </header>
+                                        <ul>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="one">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                            <li class="two">
+                                                <h2 class="date">09/09/2021</h2>  <h2 class="crime">Tentativa de Homicidio</h2> <h2 class="oficcer">Lohan Dias</h2>
+                                            </li>
+                                        </ul>
+                                    </div>
+
+
+                                  </div>
+                              </main>
+
+                        </main>
+                    </div>
+                    <div class="cars app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Carros</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        <main>
+                            <div class="searchboxcar" style="display: auto;">
+                                <div class="leftbox">
+                                    <h1>Placa do Veiculo</h1>
+                                    <input type="text">
+                                    <i class="fas fa-search" onclick="ResultSearchCar()"></i>
+                                </div>
+                                <div class="rightbox">
+                                    <h1>Veiculo mais próximo</h1>
+                                    <i class="fas fa-car-alt" onclick="ResultDist()"></i>
+                                </div>
+                                
+                            </div>
+                            <div class="resultcar" style="display: none;">
+                                <div class="top">
+                                    <img src="https://media.discordapp.net/attachments/865643876274798644/884327385661599744/unknown.png?" alt="">
+                                    <h2>José Pistoleiro</h2>
+                                    <h3>23 Anos</h3>
+                                </div>
+                                <div class="resultsearch" style="display: none;">
+                                    <h1>Passaporte: <span>23</span></h1>
+                                    <h1>Identidade: <span>BRANBRAN</span></h1>
+                                </div>
+                                <div class="resultdist" style="display: none;">
+                                    <h1>Passaporte: <span>23</span></h1>
+                                    <h1>Identidade: <span>BRANBRAN</span></h1>
+                                    <h1>Modelo: <span>Panto</span></h1>
+                                </div>
+
+                            </div>
+                        </main>
+                    </div>
+                    <div class="divisions app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Recentes</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                    </div>
+                    <div class="prision app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Prender</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        <div class="leftbox">
+                            <div class="boxmark">
+                                <h1>Crimes Contra a ordem pública</h1>
+                                <div class="invi">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="rightbox">
+
+                        </div>
+                    </div>
+                    <div class="fine app">
+                        <button onclick="home()">voltar</button>
+                    </div>
+                    <div class="warning app">
+                        <button onclick="home()">voltar</button>
+                    </div>
+                    <!--TABLET CONTENT -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script src="script.js"></script>
+</html>

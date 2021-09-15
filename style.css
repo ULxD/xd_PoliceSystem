@@ -1,0 +1,638 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+@font-face {
+    font-family: 'confort';
+    src: url('fonts/Comfortaa-Light.ttf');
+  }
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.bkg{
+    width: 100vw;
+    height: 100vh;
+    background-image: url('https://media.discordapp.net/attachments/717934456131813418/879822996645232690/unknown.png?');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+/* Tablet estrutura */
+
+.tabletbordermain{
+    height: 63.8vh;
+    width: 54.6vw;
+    position: fixed;
+    top: 22.0vh;
+    left: 22.65vw;
+    border: 1px solid rgb(160, 157, 157);
+    border-radius: 3vh;
+    background-color: white;
+}
+
+.tabletborder{
+    height: 62.5vh;
+    width: 54vw;
+    position: fixed;
+    top: 22.5vh;
+    left: 22.9vw;
+    border: 3px solid rgba(141, 140, 140, 0.411);
+    border-radius: 3vh;
+    background-color: white;
+}
+
+.tabletbordermain .camera{
+    height: 8vh;
+    width: 8vw;
+}
+
+.tabletbox{
+    height: 58vh;
+    width: 50vw;
+    position: fixed;
+    top: 25vh;
+    left: 25vw;
+    border:2px solid rgb(165, 165, 165);
+    border-radius: 15px;
+    background-image: url('imgs/apps/bac.png');
+    background-size: cover;
+}
+
+
+/** **/
+
+.tabletbox .home ul{
+    height: 57.5vh;
+    width: 100%;
+    border-radius: 1.3vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url('https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+.tabletbox .home ul li{
+    list-style: none;
+    height: 49.5%;
+    width: 32.9%;
+    margin: 0.1vh 0.1vw 0.1vh 0.1vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: rgba(255, 255, 255, 0.904);
+    display: flex;
+}
+
+.tabletbox .home ul li:hover{
+    cursor: pointer;
+    border: 2px solid #505ca4;
+}
+
+.tabletbox .home ul li:nth-child(1){
+    border-top-left-radius: 1.3vh;
+}
+
+.tabletbox .home ul li:nth-child(3){
+    border-top-right-radius: 1.3vh;
+}
+
+.tabletbox .home ul li:nth-child(4){
+    border-bottom-left-radius: 1.3vh;
+}
+
+.tabletbox .home ul li:nth-child(6){
+    border-bottom-right-radius: 1.3vh;
+}
+
+.tabletbox .home ul li h1{
+    font-size: 1.5rem;
+    margin: 13vh 0vw 0vh 1vw;
+    color: rgb(83, 81, 81);
+    font-family: 'confort';
+}
+
+.tabletbox .home ul li .fas{
+ font-size: 6rem;
+ margin: 10vh 0vw 0vh 2vw;
+ color: #505ca4;
+}
+
+/** ** // APPPS **/
+
+.app {
+    display: none;
+    width: 49.8vw;
+}
+
+.app header{
+    height: 10vh;
+    width: 100%;
+    border-top-left-radius: 1.4vh;
+    border-top-right-radius: 1.4vh;
+    border-bottom: 5px solid #505ca4;
+    display: flex;
+}
+
+.app header .fa-home{
+    height: 100%;
+    width: 6vw;
+    font-size: 3.3rem;
+    color: #505ca4;
+    margin: 2vh 0vw 0vh 1vw;
+}
+
+.app header .fa-home:hover{
+    transition: all ease-out .5s;
+    color: rgb(8, 84, 226);
+    cursor: pointer;
+}
+
+.app header h1{
+    font-family: 'confort';
+    width: 15vw;
+    text-align: center;
+    padding-top: 2.5vh;
+    font-size: 2.5rem;
+    margin-left: 8vw;
+
+}
+
+.app img{
+    height: 10vh;
+    width: 7vw;
+    object-fit: contain;
+}
+
+.app main h1{
+    text-align: center;
+    font-size: 2.8rem;
+    font-weight: bolder;
+    font-family: 'confort';
+    margin-top: 10vh;
+}
+
+.app main input{
+    margin: 4vh 0vw 0vh 18vw;
+    width: 10vw;
+    height: 7vh;
+    font-size: 1.6rem;
+    text-align: center;
+    border: 3px solid #505ca4;
+    border-radius: 2vh;
+}
+
+.app main input:focus{
+    outline-color: red;
+    outline: none;
+}
+
+
+.app main .fa-search{
+    font-size: 3.5rem;
+    color: #505ca4;
+    position: relative;
+    top: 0.8vh;
+    left: 1vw;
+    transition: transform .4s;
+    transition: all ease .5s;
+}
+
+.app main .fa-search:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    color: rgb(8, 84, 226);
+}
+
+.app main .spinner-border{
+    margin: 20vh 0vw 0vh 25vw;
+    color: #505ca4;
+}
+
+.app main .top{
+    display: flex;
+    height: 13vh;
+    border-bottom: 5px solid #505ca4;
+}
+
+.app main .top img{
+    border: 3px solid #505da4;
+    border-radius: 100%;
+    object-fit: contain;
+    height: 11vh;
+    width: 6.45vw;
+    margin: 1vh 0vw 0vh 2vw;
+}
+
+.app main .top h2{
+    font-family: 'confort';
+    font-size: 2.3rem;
+    margin: 3.8vh 0vw 0vh 1vw;
+} 
+
+.app main .top h3{
+    font-family: 'confort';
+    font-size: 2.3rem;
+    margin: 4vh 0vw 0vh 13vw;
+    font-weight: bolder;
+} 
+
+.app main .content{
+    display: flex;
+}
+
+.app main .leftbox{
+    height: 34.5vh;
+    width: 9vw;
+    border-bottom-left-radius: 1.4vh;
+    border-right: 4px solid #505ca4;
+}
+
+.app main .leftbox .buttons{
+    padding: 5vh 0vw 0vh 0vw;
+}
+
+.app main .leftbox .button{
+    width: 7vw;
+    border: 3px solid #505da4;
+    border-radius: 2vh;
+    text-align: center;
+    margin: 1vh;
+    font-weight: 400;
+    font-family: 'confort';
+    font-size: 1rem;
+    transition: transform .4s;
+    transition: all .7s;
+}
+
+.app main .leftbox .button:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+    border-color: rgb(8, 84, 226);
+}
+.app main .boxinfos {
+    display: flex;
+    flex-wrap: wrap;
+    width: 39vw;
+}
+
+.app main .boxinfos h4{
+    margin: 3vh 0vw 0vh 0vw;
+    color: black;
+    font-family: 'confort';
+    font-weight: bolder;
+    text-align: center;
+}
+
+.app main .boxinfos span{
+    font-weight: 100;
+}
+
+.app main .boxinfos .leftinfos{
+    width: 50%;
+    font-family: 2rem;
+    text-align: center;
+    margin: 4vh 0vw 2vh 0vw;
+}
+
+.app main .boxinfos .rightinfos{
+    width: 50%;
+    font-family: 2rem;
+    margin: 4vh 0vw 2vh 0vw;
+    text-align: center;
+}
+
+
+.app main .prisioninfos{
+    width: 39vw;
+}
+
+.app main .prisioninfos header{
+    height: 5.5vh;
+    width: 40.8vw;
+    border-bottom: 3px dotted #505ca4;
+}
+
+.app main .prisioninfos header h1{
+    font-size: 1.3rem;
+    margin: 1.5vh;
+    padding: 0;
+}
+
+.app main .prisioninfos ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 40.8vw;
+}
+
+.app main .prisioninfos ul li{
+    height: 4vh;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(203, 203, 207);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.app main .prisioninfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .prisioninfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .prisioninfos ul li h2{
+    font-size: 1.3rem;
+    font-family: 'confort';
+}
+
+.app main .prisioninfos ul li .date{
+    margin: 0.7vh 0vw 0vh 2vw;
+    width: 8vw;
+}
+ 
+.app main .prisioninfos ul li .time{
+    margin: 0.7vh 0vw 0vh 3vw;
+    width: 8vw;
+}
+
+.app main .prisioninfos ul li .crime{
+    margin: 1.2vh 0vw 0vh 0vw;
+    width: 10vw;
+    font-size: 0.9rem;
+}
+
+.app main .prisioninfos ul li .oficcer{
+    margin: 0.7vh 0vw 0vh 1.3vw;
+    width: 8vw;
+}
+
+/* */
+
+.app main .fineinfos{
+    width: 39vw;
+}
+
+.app main .fineinfos header{
+    height: 5.5vh;
+    width: 40.8vw;
+    border-bottom: 3px dotted #505ca4;
+}
+
+.app main .fineinfos header h1{
+    font-size: 1.3rem;
+    margin: 1.5vh;
+    padding: 0;
+}
+
+.app main .fineinfos ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 40.8vw;
+}
+
+.app main .fineinfos ul li{
+    height: 4vh;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(203, 203, 207);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.app main .fineinfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .fineinfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .fineinfos ul li h2{
+    font-size: 1.3rem;
+    font-family: 'confort';
+}
+
+.app main .fineinfos ul li .date{
+    margin: 0.7vh 0vw 0vh 2vw;
+    width: 8vw;
+}
+ 
+.app main .fineinfos ul li .time{
+    margin: 0.7vh 0vw 0vh 3vw;
+    width: 8vw;
+}
+
+.app main .fineinfos ul li .crime{
+    margin: 1.2vh 0vw 0vh 0vw;
+    width: 10vw;
+    font-size: 0.9rem;
+}
+
+.app main .fineinfos ul li .oficcer{
+    margin: 0.7vh 0vw 0vh 1.3vw;
+    width: 8vw;
+}
+
+/* */
+
+.app main .warninginfos{
+    width: 39vw;
+}
+
+.app main .warninginfos header{
+    height: 5.5vh;
+    width: 40.8vw;
+    border-bottom: 3px dotted #505ca4;
+}
+
+.app main .warninginfos header h1{
+    font-size: 1.3rem;
+    margin: 1.5vh;
+    padding: 0;
+}
+
+.app main .warninginfos ul {
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+    width: 40.8vw;
+}
+
+.app main .warninginfos ul li{
+    height: 4vh;
+    width: 100%;
+    border-radius: 0;
+    background-color: rgb(203, 203, 207);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.app main .warninginfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .warninginfos ul .one{
+    background-color: rgb(232, 232, 238); 
+}
+
+.app main .warninginfos ul li h2{
+    font-size: 1.3rem;
+    font-family: 'confort';
+}
+
+.app main .warninginfos ul li .date{
+    margin: 0.7vh 0vw 0vh 4vw;
+    width: 8vw;
+}
+ 
+
+.app main .warninginfos ul li .crime{
+    margin: 1.2vh 0vw 0vh 5vw;
+    width: 10vw;
+    font-size: 0.9rem;
+}
+
+.app main .warninginfos ul li .oficcer{
+    margin: 0.7vh 0vw 0vh 4.3vw;
+    width: 8vw;
+}
+
+/* CARROS*/
+
+.app main .searchboxcar{
+
+    width: 49.8vw;
+    height: 47.5vh;
+    border-bottom-left-radius: 1.3vh;
+    border-bottom-right-radius: 1.3vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.app main .searchboxcar .leftbox{
+    width: 50%;
+    height: 47.5vh;
+}
+
+
+.app main .searchboxcar .leftbox input{
+    margin: 4vh 0vw 0vh 4vw;
+    width: 15vw;
+    height: 7vh;
+    font-size: 1.6rem;
+    text-align: center;
+    border: 3px solid #505ca4;
+    border-radius: 2vh;
+}
+
+.app main .searchboxcar .rightbox{
+    width: 50%;
+}
+
+.app main .searchboxcar .rightbox .fa-car-alt{
+    font-size: 7rem;
+    color: #505ca4;
+    width: 100%;
+    text-align: center;
+    padding-top: 2vh;
+    transition: transform .4s;
+    transition: all .7s;
+}
+
+.app main .searchboxcar .rightbox .fa-car-alt:hover{
+    color: rgb(8, 84, 226);
+    cursor: pointer;
+    transform: scale(1.10);
+}
+
+.app main .searchboxcar h1{
+    padding: 13vh 0vw 0vh 0vw;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.app main .resultcar h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 500;
+    font-family: 'confort';
+    margin-top: 4vh;
+}
+
+.app main .resultcar span{
+    color: rgb(109, 107, 107);
+    font-weight: bolder;
+}
+
+/* PRISION */
+
+.app .leftbox{
+    width: 50%;
+    height: 47.5vh;
+    border-bottom-left-radius: 1.3vh;
+    border-right: 3px solid #505ca4;
+}
+
+.app .leftbox .boxmark{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: scroll;
+    overflow-x: hidden;
+    height: 47.5vh;
+}
+
+.app .leftbox .boxmark .invi{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 40.5vh;
+}
+
+.app .leftbox .boxmark::-webkit-scrollbar {
+	width: 4px;
+}
+
+.app .leftbox .boxmark::-webkit-scrollbar-thumb{
+    background-color: #505ca4;
+    border-top-right-radius: 4vh;
+    border-bottom-right-radius: 10vh;
+}
+
+.app .leftbox .boxmark .form-switch{
+    width: 45%;
+    margin: 1vh;
+    font-family: 'confort';
+}
+
+.prision .leftbox h1{
+    font-size: 2rem;
+    text-align: center;
+    width: 100%;
+    font-family: 'confort';
+    border-bottom: 2px solid #505ca4;
+    border-top: 2px solid #505ca4;
+}
+
+.app .rightbox{
+    width: 50%;
+    height: 47.5vh;
+    border-bottom-right-radius: 1.3vh;
+}
