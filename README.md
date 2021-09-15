@@ -9,4 +9,5 @@
 
 <h3>Próximos Passos<h3>
 
-<p>* Atualizar o JSON do código penal <br>* Finalizar prender, multar e aviso.</p>
+<p>- Atualizar o JSON do código penal</p>
+<p>Finalizar prender, multar e aviso.</p>
