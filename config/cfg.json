@@ -46,7 +46,7 @@
                 {
                     "name": "Má Utilização do Porte",
                     "fine": 25000,
-                    "time": 0
+                    "time": "Porte casado"
                 },
                 {
                     "name": "Utilização de telefone-celular no Presídio de Long Beach",
@@ -56,59 +56,504 @@
             ]
         },
         {
-            "type": "2",
-            "crimes": [
-                    {
-                    "name": "Ocultação de Face",
-                    "fine": 17000,
+        "type": "2",
+        "crimes": [
+                {
+                "name": "Difamação",
+                "fine": 20000,
+                "time": 15
+                },
+                {
+                    "name": "Injúria",
+                    "fine": 15000,
                     "time": 0
-                    },
-                    {
-                        "name": "Atentado ao Pudor / Ato Obsceno",
-                        "fine": 15000,
-                        "time": 20
-                    },
-                    {
-                        "name": "Corridas ilegais",
-                        "fine": 10000,
-                        "time": 50
-                    },
-                    {
-                        "name": "Perturbação da Paz",
-                        "fine": 5000,
-                        "time": 15
-                    },
-                    {
-                        "name": "Exercício Ilegal da Profissão",
-                        "fine": 10000,
-                        "time": 20
-                    },
-                    {
-                        "name": "Falsidade ideológica",
-                        "fine": 8000,
-                        "time": 25
-                    },
-                    {
-                        "name": "Ameaça",
-                        "fine": 5000,
-                        "time": 15
-                    },
-                    {
-                        "name": "Incitação",
-                        "fine": 20000,
-                        "time": 45
-                    },
-                    {
-                        "name": "Má Utilização do Porte",
-                        "fine": 25000,
-                        "time": 0
-                    },
-                    {
-                        "name": "Utilização de telefone-celular no Presídio de Long Beach",
-                        "fine": 5000,
-                        "time": 15
-                    }
-                ]
-            }
+                },
+                {
+                    "name": "Calúnia",
+                    "fine": 20000,
+                    "time": 18
+                },
+                {
+                    "name": "Ameaça",
+                    "fine": 5000,
+                    "time": 15
+                },
+                {
+                    "name": "Omissão de socorro",
+                    "fine": 8000,
+                    "time": 15
+                },
+                {
+                    "name": "Latrocínio",
+                    "fine": 8000,
+                    "time": 25
+                },
+                {
+                    "name": "Lesão Corporal",
+                    "fine": 10000,
+                    "time": 15
+                },
+                {
+                    "name": "Maus tratos contra animais",
+                    "fine": 0,
+                    "time": 0
+                },
+                {
+                    "name": "Abandono de incapaz",
+                    "fine": 50000,
+                    "time": 40
+                },
+                {
+                    "name": "Maus tratos",
+                    "fine": 50000,
+                    "time": 40
+                },
+                {
+                    "name": "Homicídio Culposo",
+                    "fine": 20000,
+                    "time": 50
+                },
+                {
+                    "name": "Homicódio Doloso",
+                    "fine": 30000,
+                    "time": 100
+                },
+                {
+                    "name": "Homicídio Qualificado",
+                    "fine": 35000,
+                    "time": 250
+                },
+                {
+                    "name": "Extermínio/Massacre",
+                    "fine": 70000,
+                    "time": 300
+                },
+                {
+                    "name": "Terrorismo",
+                    "fine": 80000,
+                    "time": 120
+                },
+                {
+                    "name": "Sequestro(Cárcere privado)",
+                    "fine": 40000,
+                    "time": 50
+                },
+                {
+                    "name": "Estupro/Abuso Sexual",
+                    "fine": 0,
+                    "time": "Morte"
+                },
+                {
+                    "name": "Homofobia/Transfobia, Racismo ou, Intolerância Religiosa em Geral",
+                    "fine": 0,
+                    "time": "Morte"
+                }
+            ]
+        },
+        {
+        "type": "3",
+        "crimes": [
+                {
+                "name": "Tráfico de Drogas",
+                "fine": 10000,
+                "time": "Por unidades"
+                },
+                {
+                    "name": "Tráfico de Orgãos",
+                    "fine": 10000,
+                    "time": 20
+                },
+                {
+                    "name": "Tráfico de Armas e Munições",
+                    "fine": 15000,
+                    "time": 40
+                },
+                {
+                    "name": "Porte ilegal de armamento leve",
+                    "fine": 15000,
+                    "time": 25
+                },
+                {
+                    "name": "Porte ilegal de armamento médio",
+                    "fine": 15000,
+                    "time": 30
+                },
+                {
+                    "name": "Porte ilegal de armamento pesado",
+                    "fine": 25000,
+                    "time": 50
+                },
+                {
+                    "name": "Porte ilegal de munição",
+                    "fine": 10000,
+                    "time": 20
+                },
+                {
+                    "name": "Porte de dinheiro de origem desconhecida",
+                    "fine": "10%",
+                    "time": 10
+                },
+                {
+                    "name": "Veículo com revestimento balístico",
+                    "fine": "5%",
+                    "time": "Detenção do veículo"
+                }
+            ]
+        },
+        {
+        "type": "4",
+        "crimes": [
+                {
+                "name": "Equipamento Policial ou Balístico",
+                "fine": 10000,
+                "time": 5
+                },
+                {
+                    "name": "Algema",
+                    "fine": 10000,
+                    "time": 0
+                },
+                {
+                    "name": "Lock Pick/Cartão Key",
+                    "fine": 10000,
+                    "time": 15
+                },
+                {
+                    "name": "Master Pick",
+                    "fine": 10000,
+                    "time": 20
+                },
+                {
+                    "name": "Capuz",
+                    "fine": 5000,
+                    "time": 5
+                },
+                {
+                    "name": "Coldre",
+                    "fine": 20000,
+                    "time": 8
+                },
+                {
+                    "name": "Mercadoria sem comprovante",
+                    "fine": 0,
+                    "time": 0
+                },
+                {
+                    "name": "Lavagem de Dinheiro",
+                    "fine": 100000,
+                    "time": 180
+                },
+                {
+                    "name": "Pólvora",
+                    "fine": 5000,
+                    "time": 20
+                },
+                {
+                    "name": "C4",
+                    "fine": 30000,
+                    "time": 50
+                },
+                {
+                    "name": "Nitro",
+                    "fine": 10000,
+                    "time": 10
+                }
+            ]
+        },
+        {
+        "type": "5",
+        "crimes": [
+                {
+                "name": "Estacionar em local exclusivo para taxista",
+                "fine": 8000,
+                "time": 0
+                },
+                {
+                    "name": "Estacionar em local proíbido",
+                    "fine": 8000,
+                    "time": 0
+                },
+                {
+                    "name": "Abandono de bicicleta alugada",
+                    "fine": 5000,
+                    "time": 0
+                },
+                {
+                    "name": "Estacionar na contramão",
+                    "fine": 5000,
+                    "time": 0
+                },
+                {
+                    "name": "Trafegar na contramão",
+                    "fine": 8000,
+                    "time": 0
+                },
+                {
+                    "name": "Abandono de veículo Próprio",
+                    "fine": 10000,
+                    "time": 0
+                },
+                {
+                    "name": "Abandono de veículo de trabalho",
+                    "fine": 12000,
+                    "time": 0
+                },
+                {
+                    "name": "Direção perigosa (Alta velocidade)",
+                    "fine": 10000,
+                    "time": 0
+                },
+                {
+                    "name": "Desrespeito à sinalização",
+                    "fine": 1000,
+                    "time": 0
+                },
+                {
+                    "name": "Utilização de veículo danificado",
+                    "fine": 5000,
+                    "time": "Apreensão do veículo"
+                },
+                {
+                    "name": "Atropelamento culposo",
+                    "fine": 10000,
+                    "time": 10
+                },
+                {
+                    "name": "Atropelamento coletivo",
+                    "fine": 10000,
+                    "time": 10
+                },
+                {
+                    "name": "Pilotar sem licença aérea",
+                    "fine": 45000,
+                    "time": 0
+                },
+                {
+                    "name": "Pouso não autorizado",
+                    "fine": 40000,
+                    "time": 0
+                },
+                {
+                    "name": "Pilotar sem equipamento de segurança",
+                    "fine": 15000,
+                    "time": 0
+                },
+                {
+                    "name": "Planar baixo em perímetros urbanos e rurais",
+                    "fine": 25000,
+                    "time": 20
+                },
+                {
+                    "name": "Dirigir embriagado(Entorpecido)",
+                    "fine": 5000,
+                    "time": "Apreensão do veículo"
+                },
+                {
+                    "name": "Placa Clonada",
+                    "fine": 10000,
+                    "time": 40
+                },
+                {
+                    "name": "Falta de Representação formal de ocorrência",
+                    "fine": 12000,
+                    "time": 0
+                }
+            ]
+        },
+        {
+        "type": "6",
+        "crimes": [
+                {
+                "name": "Furto",
+                "fine": 14000,
+                "time": 25
+                },
+                {
+                    "name": "Roubo",
+                    "fine": 23000,
+                    "time": 35
+                },
+                {
+                    "name": "Revogado",
+                    "fine": 0,
+                    "time": 0
+                },
+                {
+                    "name": "Invasão de propriedade",
+                    "fine": 10000,
+                    "time": 15
+                },
+                {
+                    "name": "Desmanche de peças de veículos",
+                    "fine": 25000,
+                    "time": 30
+                }
+            ]
+        },
+        {
+        "type": "7",
+        "crimes": [
+                {
+                "name": "Assalto a loja de departamento",
+                "fine": 0,
+                "time": 40
+                },
+                {
+                    "name": "Assalto a loja de departamento com refém",
+                    "fine": 0,
+                    "time": 45
+                },
+                {
+                    "name": "Assalto a loja de bebidas",
+                    "fine": 0,
+                    "time": 35
+                },
+                {
+                    "name": "Assalto â açougue/galinheiro",
+                    "fine": 0,
+                    "time": 70
+                },
+                {
+                    "name": "Assalto à Ammunition",
+                    "fine": 0,
+                    "time": 30
+                },
+                {
+                    "name": "Assalto ATM",
+                    "fine": 0,
+                    "time": 20
+                },
+                {
+                    "name": "Assalto à caixa registradora",
+                    "fine": 0,
+                    "time": 15
+                },
+                {
+                    "name": "Assalto à residência",
+                    "fine": 0,
+                    "time": 10
+                },
+                {
+                    "name": "Assalto a Banco de pequeno porte",
+                    "fine": 0,
+                    "time": 100
+                },
+                {
+                    "name": "Assalto a Banco de pequeno porte com refém",
+                    "fine": 0,
+                    "time": 110
+                },
+                {
+                    "name": "Assalto a Banco de médio porte",
+                    "fine": 0,
+                    "time": 150
+                },
+                {
+                    "name": "Assalto a banco de médio porte com refém",
+                    "fine": 0,
+                    "time": 160
+                },
+                {
+                    "name": "Assalto ao Banco central",
+                    "fine": 0,
+                    "time": 200
+                },
+                {
+                    "name": "Assalto ao Laboratório humane",
+                    "fine": 0,
+                    "time": 200
+                },
+                {
+                    "name": "Assalto a joalheria",
+                    "fine": 0,
+                    "time": 100
+                },
+                {
+                    "name": "Assalto a joalheria com ferém",
+                    "fine": 0,
+                    "time": 110
+                }
+            ]
+        },
+        {
+        "type": "8",
+        "crimes": [
+                {
+                "name": "Prevaricação",
+                "fine": 75000,
+                "time": 60
+                },
+                {
+                    "name": "Concussão",
+                    "fine": 50000,
+                    "time": 45
+                },
+                {
+                    "name": "Corrupção passiva",
+                    "fine": 45000,
+                    "time": 45
+                },
+                {
+                    "name": "Corrupção ativa",
+                    "fine": 40000,
+                    "time": 35
+                },
+                {
+                    "name": "Desacato à autoridade",
+                    "fine": 15000,
+                    "time": 30
+                },
+                {
+                    "name": "Desobediência à ordem legal/Resistência a prisão",
+                    "fine": 10000,
+                    "time": 20
+                },
+                {
+                    "name": "Fuga de abordagem policial",
+                    "fine": 15000,
+                    "time": 25
+                },
+                {
+                    "name": "Tentativa de fuga de abordagem policial",
+                    "fine": 7000,
+                    "time": 20
+                },
+                {
+                    "name": "Fuga da Prisão",
+                    "fine": 15000,
+                    "time": 25
+                },
+                {
+                    "name": "Obstrução da justiça",
+                    "fine": 10000,
+                    "time": 15
+                },
+                {
+                    "name": "Multas pendentes",
+                    "fine": 0,
+                    "time": 10
+                },
+                {
+                    "name": "Perjúrio",
+                    "fine": 10000,
+                    "time": 15
+                }
+            ]
+        },
+        {
+        "type": "9",
+        "crimes": [
+                {
+                "name": "Destruir, inutilizar",
+                "fine": 10000,
+                "time": 0
+                },
+                {
+                    "name": "Abandono de veículo público",
+                    "fine": 5000,
+                    "time": 0
+                }
+            ]
+        }
     ]
 }
