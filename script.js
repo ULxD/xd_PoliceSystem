@@ -11,19 +11,13 @@ var requestjson = fetch("config/cfg.json")
 
 console.log(crimeslist)
 
-let xD = 2
-
-let xD1 = 3
-let xD2 = 4
-let xD3 = 5
-let xD4 = 6
 
 
 function closeAll(){
     $('.home').hide()
     $('.cars').hide()
     $('.registers').hide()
-    $('.divisions').hide()
+    $('.divisions').hide() 
     $('.prision').hide()
     $('.fine').hide()
     $('.warning').hide()
@@ -63,7 +57,71 @@ function prision(){
     $('.prision').show(200)
 
     crimeslist[0].crimes.map((element,index)=>{
-        $('.invi').append(`
+        $('.a').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[1].crimes.map((element,index)=>{
+        $('.b').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[2].crimes.map((element,index)=>{
+        $('.c').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[3].crimes.map((element,index)=>{
+        $('.d').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[4].crimes.map((element,index)=>{
+        $('.e').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[5].crimes.map((element,index)=>{
+        $('.f').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[5].crimes.map((element,index)=>{
+        $('.g').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[6].crimes.map((element,index)=>{
+        $('.h').append(`
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+            </div>
+        `)
+    })
+    crimeslist[7].crimes.map((element,index)=>{
+        $('.j').append(`
             <div class="form-check form-switch">
                 <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                 <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
