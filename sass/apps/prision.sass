@@ -1,0 +1,84 @@
+.prision 
+    width: 49.8vw
+
+    .leftbox
+        width: 50%
+        height: 47.5vh
+        border-bottom-left-radius: 1.3vh
+        border-right: 3px solid $primary-color
+        float: left
+
+        .boxmark
+            display: flex
+            flex-wrap: wrap
+            width: 100%
+            overflow: scroll
+            overflow-x: hidden
+            height: 47.5vh
+
+            .content
+                display: flex
+                flex-wrap: wrap
+                width: 100%
+                height: auto
+
+            .form-switch
+                width: 45%
+                margin: 1vh
+                font-family: $font-main
+
+        h1 
+            font-size: 2rem
+            text-align: center
+            width: 100%
+            font-family: $font-main
+            border-bottom: 2px solid $primary-color
+            border-top: 2px solid $primary-color
+
+        .boxmark::-webkit-scrollbar
+            width: 4px
+
+        .boxmark::-webkit-scrollbar-thumb
+            background-color: $primary-color
+            border-top-right-radius: 4vh
+            border-bottom-right-radius: 10vh
+
+
+    .rightbox
+        width: 50%
+        height: 47.5vh
+        border-bottom-right-radius: 1.3vh
+        float: right
+
+        .passport
+            height: 4vh
+            width: 8vw
+            border-radius: 1vh
+            text-align: center
+            margin: 8vh 0vw 0vh 8vw
+            border-color: $primary-color
+            font-family: $font-main
+
+        .passport:focus
+            outline: none
+
+
+        h1
+            width: 50%
+            font-size: 1.8rem
+            color: $gray-color
+            margin: 6vh 0vw 2vh 1vw
+        
+        button
+            margin: 8vh 0vw 0vh 3vw
+            padding: 0.5vh
+            color: white
+            border: 2px solid $gray-color
+            background-color: $primary-color
+            border-radius: 1.3vh
+            width: 8vw
+
+        button:hover
+            border-color: $second-color
+            background-color: white
+            color: $primary-color

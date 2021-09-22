@@ -1,0 +1,80 @@
+.cars 
+    .searchboxcar
+        width: 49.8vw
+        height: 47.5vh
+        border-bottom-left-radius: 1.3vh
+        border-bottom-right-radius: 1.3vh
+        margin: 0
+        padding: 0
+        display: flex
+
+        .rightbox
+            width: 50%
+
+            .fa-car-alt
+                font-size: 7rem
+                color: $primary-color
+                width: 100%
+                text-align: center
+                padding-top: 2vh
+                transition: transform .4s
+                transition: all .7s
+
+            .fa-car-alt:hover
+                color: $second-color
+                cursor: pointer
+                transform: scale(1.10)
+
+            h1 
+                text-align: center
+                font-size: 2.5rem
+                font-family: $font-main
+                margin-top: 12vh
+
+        .leftbox
+            width: 50%
+            height: 47.5vh
+            border-right: 3px solid $primary-color
+
+            h1 
+                text-align: center
+                font-size: 2.5rem
+                font-weight: 500
+                font-family: $font-main
+                margin-top: 12vh
+
+            .fa-search
+                font-size: 3.5rem
+                color: $primary-color
+                position: relative
+                top: 0.8vh
+                left: 1vw
+                transition: transform .4s
+                transition: all ease .5s
+
+            .fa-search:hover
+                cursor: pointer
+                transform: scale(1.08)
+                color: $second-color
+
+            input
+                margin: 4vh 0vw 0vh 4vw
+                width: 15vw
+                height: 7vh
+                font-size: 1.6rem
+                text-align: center
+                border: 3px solid $primary-color
+                border-radius: 2vh
+
+    .resultcar
+
+        h1
+            text-align: center
+            font-size: 2.5rem
+            font-weight: 500
+            font-family: $font-main
+            margin-top: 4vh
+
+        span 
+            color: rgb(109, 107, 107)
+            font-weight: bolder
