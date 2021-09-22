@@ -1,0 +1,589 @@
+@font-face {
+  font-family: "confort";
+  src: url("fonts/Comfortaa-Light.ttf");
+}
+.bkg {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("https://media.discordapp.net/attachments/717934456131813418/879822996645232690/unknown.png?");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.bkg .tabletbordermain {
+  height: 63.8vh;
+  width: 54.6vw;
+  position: fixed;
+  top: 22vh;
+  left: 22.65vw;
+  border: 1px solid #a09d9d;
+  border-radius: 3vh;
+  background-color: #c3c5c7;
+}
+.bkg .tabletbordermain .tabletborder {
+  height: 62.5vh;
+  width: 54vw;
+  position: fixed;
+  top: 22.5vh;
+  left: 22.9vw;
+  border: 3px solid rgba(141, 140, 140, 0.411);
+  border-radius: 3vh;
+  background-color: #c3c5c7;
+}
+.bkg .tabletbordermain .tabletborder .tabletbox {
+  height: 58vh;
+  width: 50vw;
+  position: fixed;
+  top: 25vh;
+  left: 25vw;
+  border: 2px solid #a5a5a5;
+  border-radius: 15px;
+  background-image: url("imgs/apps/bac.png");
+  background-size: cover;
+  background-color: white;
+}
+
+.app {
+  display: none;
+  width: 49.8vw;
+}
+.app header {
+  height: 10vh;
+  width: 100%;
+  border-top-left-radius: 1.4vh;
+  border-top-right-radius: 1.4vh;
+  border-bottom: 5px solid #505ca4;
+  display: flex;
+}
+.app header .fa-home {
+  height: 100%;
+  width: 6vw;
+  font-size: 3.3rem;
+  color: #505ca4;
+  margin: 2vh 0vw 0vh 1vw;
+}
+.app header .fa-home:hover {
+  transition: all ease-out 0.5s;
+  color: #0854e2;
+  cursor: pointer;
+}
+.app header h1 {
+  font-family: roboto;
+  width: 15vw;
+  text-align: center;
+  padding-top: 2.5vh;
+  font-size: 2.5rem;
+  margin-left: 8vw;
+}
+.app header img {
+  height: 10vh;
+  width: 7vw;
+  object-fit: contain;
+}
+
+.registers main h1 {
+  text-align: center;
+  font-size: 2.8rem;
+  font-weight: bolder;
+  font-family: roboto;
+  margin-top: 10vh;
+}
+.registers main input {
+  margin: 4vh 0vw 0vh 18vw;
+  width: 10vw;
+  height: 7vh;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 3px solid #505ca4;
+  border-radius: 2vh;
+}
+.registers main input:focus {
+  outline-color: red;
+  outline: none;
+}
+.registers main .fa-search {
+  font-size: 3.5rem;
+  color: #505ca4;
+  position: relative;
+  top: 0.8vh;
+  left: 1vw;
+  transition: transform 0.4s;
+  transition: all ease 0.5s;
+}
+.registers main .fa-search:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  color: #0854e2;
+}
+.registers main .spinner-border {
+  margin: 20vh 0vw 0vh 25vw;
+  color: #505ca4;
+}
+.registers main .top {
+  display: flex;
+  height: 13vh;
+  border-bottom: 5px solid #505ca4;
+}
+.registers main .top img {
+  border: 3px solid #505ca4;
+  border-radius: 100%;
+  object-fit: contain;
+  height: 11vh;
+  width: 6.45vw;
+  margin: 1vh 0vw 0vh 2vw;
+}
+.registers main .top h2 {
+  font-family: roboto;
+  font-size: 2.3rem;
+  margin: 3.8vh 0vw 0vh 1vw;
+}
+.registers main .top h3 {
+  font-family: roboto;
+  font-size: 2.3rem;
+  margin: 4vh 0vw 0vh 13vw;
+  font-weight: bolder;
+}
+.registers main .content {
+  display: flex;
+}
+.registers main .leftbox {
+  height: 34.5vh;
+  width: 9vw;
+  border-bottom-left-radius: 1.4vh;
+  border-right: 4px solid #505ca4;
+}
+.registers main .leftbox .buttons {
+  padding: 5vh 0vw 0vh 0vw;
+}
+.registers main .leftbox .button {
+  width: 7vw;
+  border: 3px solid #505ca4;
+  border-radius: 2vh;
+  text-align: center;
+  margin: 1vh;
+  font-weight: 400;
+  font-family: roboto;
+  font-size: 1rem;
+  transition: transform 0.4s;
+  transition: all 0.7s;
+}
+.registers main .leftbox .button:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  border-color: #0854e2;
+}
+.registers .boxinfos {
+  display: flex;
+  flex-wrap: wrap;
+  width: 39vw;
+}
+.registers .boxinfos h4 {
+  margin: 3vh 0vw 0vh 0vw;
+  color: black;
+  font-family: roboto;
+  font-weight: bolder;
+  text-align: center;
+}
+.registers .boxinfos span {
+  font-weight: 100;
+}
+.registers .boxinfos .leftinfos {
+  width: 50%;
+  font-family: 2rem;
+  text-align: center;
+  margin: 4vh 0vw 2vh 0vw;
+}
+.registers .boxinfos .rightinfos {
+  width: 50%;
+  font-family: 2rem;
+  margin: 4vh 0vw 2vh 0vw;
+  text-align: center;
+}
+.registers .prisioninfos {
+  width: 39vw;
+}
+.registers .prisioninfos header {
+  height: 5.5vh;
+  width: 40.8vw;
+  border-bottom: 3px dotted #505ca4;
+}
+.registers .prisioninfos header h1 {
+  font-size: 1.3rem;
+  margin: 1.5vh;
+  padding: 0;
+}
+.registers .prisioninfos ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 40.8vw;
+}
+.registers .prisioninfos ul .one {
+  background-color: #e8e8ee;
+}
+.registers .prisioninfos ul li {
+  height: 4vh;
+  width: 100%;
+  border-radius: 0;
+  background-color: #cbcbcf;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.registers .prisioninfos ul li .one {
+  background-color: #e8e8ee;
+}
+.registers .prisioninfos ul li h2 {
+  font-size: 1.3rem;
+  font-family: roboto;
+}
+.registers .prisioninfos ul li .date {
+  margin: 0.7vh 0vw 0vh 2vw;
+  width: 8vw;
+}
+.registers .prisioninfos ul li .time {
+  margin: 0.7vh 0vw 0vh 3vw;
+  width: 8vw;
+}
+.registers .prisioninfos ul li .crime {
+  margin: 1.2vh 0vw 0vh 0vw;
+  width: 10vw;
+  font-size: 0.9rem;
+}
+.registers .prisioninfos ul li .officcer {
+  margin: 0.7vh 0vw 0vh 1.3vw;
+  width: 8vw;
+}
+.registers .fineinfos {
+  width: 39vw;
+}
+.registers .fineinfos header {
+  height: 5.5vh;
+  width: 40.8vw;
+  border-bottom: 3px dotted #505ca4;
+}
+.registers .fineinfos header h1 {
+  font-size: 1.3rem;
+  margin: 1.5vh;
+  padding: 0;
+}
+.registers .fineinfos ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 40.8vw;
+}
+.registers .fineinfos ul .one {
+  background-color: #e8e8ee;
+}
+.registers .fineinfos ul li {
+  height: 4vh;
+  width: 100%;
+  border-radius: 0;
+  background-color: #cbcbcf;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.registers .fineinfos ul li h2 {
+  font-size: 1.3rem;
+  font-family: roboto;
+}
+.registers .fineinfos ul li .date {
+  margin: 0.7vh 0vw 0vh 2vw;
+  width: 8vw;
+}
+.registers .fineinfos ul li .time {
+  margin: 0.7vh 0vw 0vh 3vw;
+  width: 8vw;
+}
+.registers .fineinfos ul li .crime {
+  margin: 1.2vh 0vw 0vh 0vw;
+  width: 10vw;
+  font-size: 0.9rem;
+}
+.registers .fineinfos ul li .oficcer {
+  margin: 0.7vh 0vw 0vh 1.3vw;
+  width: 8vw;
+}
+.registers .warninginfos {
+  width: 39vw;
+}
+.registers .warninginfos header {
+  height: 5.5vh;
+  width: 40.8vw;
+  border-bottom: 3px dotted #505ca4;
+}
+.registers .warninginfos header h1 {
+  font-size: 1.3rem;
+  margin: 1.5vh;
+  padding: 0;
+}
+.registers .warninginfos ul {
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  width: 40.8vw;
+}
+.registers .warninginfos ul .one {
+  background-color: #e8e8ee;
+}
+.registers .warninginfos ul li {
+  height: 4vh;
+  width: 100%;
+  border-radius: 0;
+  background-color: #cbcbcf;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.registers .warninginfos ul li h2 {
+  font-size: 1.3rem;
+  font-family: roboto;
+}
+.registers .warninginfos ul li .date {
+  margin: 0.7vh 0vw 0vh 4vw;
+  width: 8vw;
+}
+.registers .warninginfos ul li .time {
+  margin: 0.7vh 0vw 0vh 5vw;
+  width: 8vw;
+}
+.registers .warninginfos ul li .crime {
+  margin: 1.2vh 0vw 0vh 5vw;
+  width: 10vw;
+  font-size: 0.9rem;
+}
+.registers .warninginfos ul li .oficcer {
+  margin: 0.7vh 0vw 0vh 4.3vw;
+  width: 8vw;
+}
+
+.prision {
+  width: 49.8vw;
+}
+.prision .leftbox {
+  width: 50%;
+  height: 47.5vh;
+  border-bottom-left-radius: 1.3vh;
+  border-right: 3px solid #505ca4;
+  float: left;
+}
+.prision .leftbox .boxmark {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  height: 47.5vh;
+}
+.prision .leftbox .boxmark .content {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  height: auto;
+}
+.prision .leftbox .boxmark .form-switch {
+  width: 45%;
+  margin: 1vh;
+  font-family: roboto;
+}
+.prision .leftbox h1 {
+  font-size: 2rem;
+  text-align: center;
+  width: 100%;
+  font-family: roboto;
+  border-bottom: 2px solid #505ca4;
+  border-top: 2px solid #505ca4;
+}
+.prision .leftbox .boxmark::-webkit-scrollbar {
+  width: 4px;
+}
+.prision .leftbox .boxmark::-webkit-scrollbar-thumb {
+  background-color: #505ca4;
+  border-top-right-radius: 4vh;
+  border-bottom-right-radius: 10vh;
+}
+.prision .rightbox {
+  width: 50%;
+  height: 47.5vh;
+  border-bottom-right-radius: 1.3vh;
+  float: right;
+}
+.prision .rightbox .passport {
+  height: 4vh;
+  width: 8vw;
+  border-radius: 1vh;
+  text-align: center;
+  margin: 8vh 0vw 0vh 8vw;
+  border-color: #505ca4;
+  font-family: roboto;
+}
+.prision .rightbox .passport:focus {
+  outline: none;
+}
+.prision .rightbox h1 {
+  width: 50%;
+  font-size: 1.8rem;
+  color: #535151;
+  margin: 6vh 0vw 2vh 1vw;
+}
+.prision .rightbox button {
+  margin: 8vh 0vw 0vh 3vw;
+  padding: 0.5vh;
+  color: white;
+  border: 2px solid #535151;
+  background-color: #505ca4;
+  border-radius: 1.3vh;
+  width: 8vw;
+}
+.prision .rightbox button:hover {
+  border-color: #0854e2;
+  background-color: white;
+  color: #505ca4;
+}
+
+.cars .searchboxcar {
+  width: 49.8vw;
+  height: 47.5vh;
+  border-bottom-left-radius: 1.3vh;
+  border-bottom-right-radius: 1.3vh;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+.cars .searchboxcar .rightbox {
+  width: 50%;
+}
+.cars .searchboxcar .rightbox .fa-car-alt {
+  font-size: 7rem;
+  color: #505ca4;
+  width: 100%;
+  text-align: center;
+  padding-top: 2vh;
+  transition: transform 0.4s;
+  transition: all 0.7s;
+}
+.cars .searchboxcar .rightbox .fa-car-alt:hover {
+  color: #0854e2;
+  cursor: pointer;
+  transform: scale(1.1);
+}
+.cars .searchboxcar .rightbox h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-family: roboto;
+  margin-top: 12vh;
+}
+.cars .searchboxcar .leftbox {
+  width: 50%;
+  height: 47.5vh;
+  border-right: 3px solid #505ca4;
+}
+.cars .searchboxcar .leftbox h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: roboto;
+  margin-top: 12vh;
+}
+.cars .searchboxcar .leftbox .fa-search {
+  font-size: 3.5rem;
+  color: #505ca4;
+  position: relative;
+  top: 0.8vh;
+  left: 1vw;
+  transition: transform 0.4s;
+  transition: all ease 0.5s;
+}
+.cars .searchboxcar .leftbox .fa-search:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  color: #0854e2;
+}
+.cars .searchboxcar .leftbox input {
+  margin: 4vh 0vw 0vh 4vw;
+  width: 15vw;
+  height: 7vh;
+  font-size: 1.6rem;
+  text-align: center;
+  border: 3px solid #505ca4;
+  border-radius: 2vh;
+}
+.cars .resultcar h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 500;
+  font-family: roboto;
+  margin-top: 4vh;
+}
+.cars .resultcar span {
+  color: #6d6b6b;
+  font-weight: bolder;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home ul {
+  height: 57.5vh;
+  width: 100%;
+  border-radius: 1.3vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+.home ul li {
+  list-style: none;
+  height: 49.5%;
+  width: 32.9%;
+  margin: 0.1vh 0.1vw 0.1vh 0.1vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(255, 255, 255, 0.904);
+  display: flex;
+}
+.home ul li:hover {
+  cursor: pointer;
+  border: 2px solid #505ca4;
+}
+.home ul li:nth-child(1) {
+  border-top-left-radius: 1.3vh;
+}
+.home ul li:nth-child(3) {
+  border-top-right-radius: 1.3vh;
+}
+.home ul li:nth-child(4) {
+  border-bottom-left-radius: 1.3vh;
+}
+.home ul li:nth-child(6) {
+  border-bottom-right-radius: 1.3vh;
+}
+.home ul li h1 {
+  font-size: 1.5rem;
+  margin: 13vh 0vw 0vh 1vw;
+  color: #535151;
+  font-family: roboto;
+}
+.home ul li .fas {
+  font-size: 6rem;
+  margin: 10vh 0vw 0vh 2vw;
+  color: #505ca4;
+}
+
+/*# sourceMappingURL=main.css.map */
