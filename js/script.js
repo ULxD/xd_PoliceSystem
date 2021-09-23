@@ -12,7 +12,6 @@ var requestjson = fetch("config/cfg.json")
 console.log(crimeslist)
 
 
-
 function closeAll(){
     $('.home').hide()
     $('.cars').hide()
@@ -52,83 +51,37 @@ function divisions(){
     closeAll()
     $('.divisions').show(200)
 }
+
 function prision(){
     closeAll()
     $('.prision').show(200)
-
-    crimeslist[0].crimes.map((element,index)=>{
-        $('.a').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[1].crimes.map((element,index)=>{
-        $('.b').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[2].crimes.map((element,index)=>{
-        $('.c').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[3].crimes.map((element,index)=>{
-        $('.d').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[4].crimes.map((element,index)=>{
-        $('.e').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[5].crimes.map((element,index)=>{
-        $('.f').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[5].crimes.map((element,index)=>{
-        $('.g').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[6].crimes.map((element,index)=>{
-        $('.h').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
-    crimeslist[7].crimes.map((element,index)=>{
-        $('.j').append(`
-            <div class="form-check form-switch">
-                <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
-                <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
-            </div>
-        `)
-    })
+    for(i = 0; i <= 8; i ++){
+        crimeslist[i].crimes.map((element,index)=>{
+            $(`.${crimeslist[i].class}`).append(`
+                <div class="form-check form-switch">
+                    <input onclick="update()" id="${element.id}" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+                </div>
+            `)
+        })
+    }
 }
+
+
+function update(){
+    pena = 0
+    for(i = 0; i < 8; i++){
+        crimeslist[i].crimes.map((element,index)=>{
+            $(`#${element.id}`).is(':checked')
+            console.log($(`#${element.id}`).is(':checked'))
+            console.log(`${element.id}`)
+            if ($(`#${element.id}`).is(':checked')){
+                pena = pena + element.time
+                $('.soma').html(pena)
+            }
+        })
+    }
+} 
 function fine(){
     closeAll()
     $('.fine').show(200)
