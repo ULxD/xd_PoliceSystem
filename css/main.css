@@ -68,11 +68,13 @@
 }
 .app header h1 {
   font-family: roboto;
-  width: 15vw;
+  width: 20vw;
   text-align: center;
   padding-top: 2.5vh;
   font-size: 2.5rem;
   margin-left: 8vw;
+  font-weight: bolder;
+  letter-spacing: 3px;
 }
 .app header img {
   height: 10vh;
@@ -251,7 +253,7 @@
   font-size: 0.9rem;
 }
 .registers .prisioninfos ul li .officcer {
-  margin: 0.7vh 0vw 0vh 1.3vw;
+  margin: 0.9vh 0vw 0vh 1.3vw;
   width: 8vw;
 }
 .registers .fineinfos {
@@ -361,17 +363,17 @@
   width: 8vw;
 }
 
-.prision {
+.pf {
   width: 49.8vw;
 }
-.prision .leftbox {
+.pf .leftbox {
   width: 50%;
   height: 47.5vh;
   border-bottom-left-radius: 1.3vh;
   border-right: 3px solid #505ca4;
   float: left;
 }
-.prision .leftbox .boxmark {
+.pf .leftbox .boxmark {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
@@ -379,67 +381,83 @@
   overflow-x: hidden;
   height: 47.5vh;
 }
-.prision .leftbox .boxmark .content {
+.pf .leftbox .boxmark .content {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
   height: auto;
 }
-.prision .leftbox .boxmark .form-switch {
+.pf .leftbox .boxmark .form-switch {
   width: 45%;
   margin: 1vh;
   font-family: roboto;
 }
-.prision .leftbox h1 {
+.pf .leftbox .boxmark h1 {
   font-size: 2rem;
   text-align: center;
   width: 100%;
   font-family: roboto;
   border-bottom: 2px solid #505ca4;
   border-top: 2px solid #505ca4;
+  font-weight: 600;
+  padding: 1vh 0vw 1vh 0vw;
 }
-.prision .leftbox .boxmark::-webkit-scrollbar {
+.pf .leftbox .boxmark::-webkit-scrollbar {
   width: 4px;
 }
-.prision .leftbox .boxmark::-webkit-scrollbar-thumb {
+.pf .leftbox .boxmark::-webkit-scrollbar-thumb {
   background-color: #505ca4;
   border-top-right-radius: 4vh;
   border-bottom-right-radius: 10vh;
 }
-.prision .rightbox {
+.pf .rightbox {
   width: 50%;
   height: 47.5vh;
   border-bottom-right-radius: 1.3vh;
   float: right;
 }
-.prision .rightbox .passport {
+.pf .rightbox input {
+  text-align: center;
+  margin-top: 8vh;
+}
+.pf .rightbox .passport {
   height: 4vh;
   width: 8vw;
   border-radius: 1vh;
-  text-align: center;
+  text-align: centerZ;
   margin: 8vh 0vw 0vh 8vw;
   border-color: #505ca4;
   font-family: roboto;
 }
-.prision .rightbox .passport:focus {
+.pf .rightbox .passport:focus {
   outline: none;
 }
-.prision .rightbox h1 {
+.pf .rightbox h1 {
   width: 50%;
+  font-family: roboto;
   font-size: 1.8rem;
+  font-weight: 500;
   color: #535151;
-  margin: 6vh 0vw 2vh 1vw;
+  margin: 5vh 0vw 2vh 7vw;
+  width: 15vw;
 }
-.prision .rightbox button {
-  margin: 8vh 0vw 0vh 3vw;
+.pf .rightbox h1 span {
+  font-weight: bolder;
+}
+.pf .rightbox button {
+  margin: 12vh 0vw 0vh 8vw;
   padding: 0.5vh;
   color: white;
+  text-align: center;
   border: 2px solid #535151;
   background-color: #505ca4;
   border-radius: 1.3vh;
   width: 8vw;
+  transition: transform 0.3s;
 }
-.prision .rightbox button:hover {
+.pf .rightbox button:hover {
+  transform: scale(1.05);
+  transition: all ease-out 0.3s;
   border-color: #0854e2;
   background-color: white;
   color: #505ca4;

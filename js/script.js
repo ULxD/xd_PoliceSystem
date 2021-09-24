@@ -29,6 +29,15 @@ function closeAll(){
     $('.resultdist').hide()
     $('.resultsearch').hide()
     $('.contentmain').hide()
+    $('.a').html('')
+    $('.b').html('')
+    $('.c').html('')
+    $('.d').html('')
+    $('.e').html('')
+    $('.f').html('')
+    $('.g').html('')
+    $('.h').html('')
+    $('.j').html('')
 }
 
 function home(){
@@ -59,7 +68,7 @@ function prision(){
         crimeslist[i].crimes.map((element,index)=>{
             $(`.${crimeslist[i].class}`).append(`
                 <div class="form-check form-switch">
-                    <input onclick="update()" id="${element.id}" class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input onclick="update()" class="${element.id} form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                     <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
                 </div>
             `)
@@ -68,24 +77,54 @@ function prision(){
 }
 
 
+let sentence 
+let finev 
+
 function update(){
-    pena = 0
+    sentence = 0
+    finev = 0
     for(i = 0; i < 8; i++){
         crimeslist[i].crimes.map((element,index)=>{
-            $(`#${element.id}`).is(':checked')
-            console.log($(`#${element.id}`).is(':checked'))
-            console.log(`${element.id}`)
-            if ($(`#${element.id}`).is(':checked')){
-                pena = pena + element.time
-                $('.soma').html(pena)
+            if ($(`.${element.id}`).is(':checked')){
+                sentence = sentence + element.time
+                finev = finev + element.fine
+                $('.soma').html(sentence)
+                $('.finev').html(finev)
             }
         })
     }
 } 
+
+function updateFine(){
+    sentence = 0
+    finev = 0
+    for(i = 0; i < 8; i++){
+        crimeslist[i].crimes.map((element,index)=>{
+            if ($(`.${element.id}`).is(':checked')){
+                sentence = sentence + element.time
+                finev = finev + element.fine
+                $('.soma').html(sentence)
+                $('.finev').html(finev)
+            }
+        })
+    }
+} 
+
 function fine(){
     closeAll()
     $('.fine').show(200)
+    for(i = 0; i <= 8; i ++){
+        crimeslist[i].crimes.map((element,index)=>{
+            $(`.${crimeslist[i].class}`).append(`
+                <div class="form-check form-switch">
+                    <input onclick="updateFine()" class="${element.id} form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
+                </div>
+            `)
+        })
+    }
 }
+
 function warning(){
     closeAll()
     $('.warning').show(200)

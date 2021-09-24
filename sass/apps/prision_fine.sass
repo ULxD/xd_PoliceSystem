@@ -1,4 +1,4 @@
-.prision 
+.pf 
     width: 49.8vw
 
     .leftbox
@@ -27,13 +27,15 @@
                 margin: 1vh
                 font-family: $font-main
 
-        h1 
-            font-size: 2rem
-            text-align: center
-            width: 100%
-            font-family: $font-main
-            border-bottom: 2px solid $primary-color
-            border-top: 2px solid $primary-color
+            h1 
+                font-size: 2rem
+                text-align: center
+                width: 100%
+                font-family: $font-main
+                border-bottom: 2px solid $primary-color
+                border-top: 2px solid $primary-color
+                font-weight: 600
+                padding: 1vh 0vw 1vh 0vw
 
         .boxmark::-webkit-scrollbar
             width: 4px
@@ -50,11 +52,15 @@
         border-bottom-right-radius: 1.3vh
         float: right
 
+        input
+            text-align: center
+            margin-top: 8vh
+
         .passport
             height: 4vh
             width: 8vw
             border-radius: 1vh
-            text-align: center
+            text-align: centerZ
             margin: 8vh 0vw 0vh 8vw
             border-color: $primary-color
             font-family: $font-main
@@ -65,20 +71,30 @@
 
         h1
             width: 50%
+            font-family: $font-main
             font-size: 1.8rem
+            font-weight: 500
             color: $gray-color
-            margin: 6vh 0vw 2vh 1vw
+            margin: 5vh 0vw 2vh 7vw
+            width: 15vw
+
+            span 
+                font-weight: bolder
         
         button
-            margin: 8vh 0vw 0vh 3vw
+            margin: 12vh 0vw 0vh 8vw
             padding: 0.5vh
             color: white
+            text-align: center
             border: 2px solid $gray-color
             background-color: $primary-color
             border-radius: 1.3vh
             width: 8vw
+            transition: transform .3s
 
         button:hover
+            transform: scale(1.05)
+            transition: all ease-out .3s
             border-color: $second-color
             background-color: white
             color: $primary-color
