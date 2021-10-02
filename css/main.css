@@ -1,11 +1,22 @@
-@font-face {
-  font-family: "confort";
-  src: url("fonts/Comfortaa-Light.ttf");
+.warning .containerbox button:hover, .pf .rightbox button:hover {
+  transform: scale(1.05);
+  transition: all ease-out 0.5s;
+  border-color: #0854e2;
+  background-color: white;
+  color: #505ca4;
 }
+
+.warning .containerbox input, .registers main input {
+  font-size: 1.6rem;
+  text-align: center;
+  border: 3px solid #505ca4;
+  border-radius: 2vh;
+}
+
 .bkg {
   width: 100vw;
   height: 100vh;
-  background-image: url("https://media.discordapp.net/attachments/717934456131813418/879822996645232690/unknown.png?");
+  background-color: transparent;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -40,6 +51,69 @@
   background-image: url("imgs/apps/bac.png");
   background-size: cover;
   background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  user-select: none;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+}
+
+.home ul {
+  height: 57.5vh;
+  width: 100%;
+  border-radius: 1.3vh;
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+}
+.home ul li {
+  list-style: none;
+  height: 49.5%;
+  width: 24.6%;
+  margin: 0.1vh 0.1vw 0.1vh 0.1vw;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  background-color: rgba(255, 255, 255, 0.904);
+  display: flex;
+}
+.home ul li:hover {
+  cursor: pointer;
+  border: 2px solid #505ca4;
+}
+.home ul li:nth-child(1) {
+  border-top-left-radius: 1.3vh;
+}
+.home ul li:nth-child(4) {
+  border-top-right-radius: 1.3vh;
+}
+.home ul li:nth-child(5) {
+  border-bottom-left-radius: 1.3vh;
+}
+.home ul li:nth-child(8) {
+  border-bottom-right-radius: 1.3vh;
+}
+.home ul li h1 {
+  font-size: 1.2rem;
+  margin: 13vh 0vw 0vh 1vw;
+  color: #535151;
+  font-family: roboto;
+}
+.home ul li .fas {
+  font-size: 4rem;
+  margin: 12vh 0vw 0vh 1.5vw;
+  color: #505ca4;
 }
 
 .app {
@@ -93,10 +167,6 @@
   margin: 4vh 0vw 0vh 18vw;
   width: 10vw;
   height: 7vh;
-  font-size: 1.6rem;
-  text-align: center;
-  border: 3px solid #505ca4;
-  border-radius: 2vh;
 }
 .registers main input:focus {
   outline-color: red;
@@ -455,14 +525,6 @@
   width: 8vw;
   transition: transform 0.3s;
 }
-.pf .rightbox button:hover {
-  transform: scale(1.05);
-  transition: all ease-out 0.3s;
-  border-color: #0854e2;
-  background-color: white;
-  color: #505ca4;
-}
-
 .cars .searchboxcar {
   width: 49.8vw;
   height: 47.5vh;
@@ -541,67 +603,115 @@
   color: #6d6b6b;
   font-weight: bolder;
 }
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  user-select: none;
+.cars .resultcar .top {
+  display: flex;
+  height: 13vh;
+  border-bottom: 5px solid #505ca4;
+}
+.cars .resultcar .top img {
+  border: 3px solid #505ca4;
+  border-radius: 100%;
+  object-fit: contain;
+  height: 11vh;
+  width: 6.45vw;
+  margin: 1vh 0vw 0vh 2vw;
+}
+.cars .resultcar .top h2 {
+  font-family: roboto;
+  font-size: 2.3rem;
+  margin: 3.8vh 0vw 0vh 1vw;
+}
+.cars .resultcar .top h3 {
+  font-family: roboto;
+  font-size: 2.3rem;
+  margin: 4vh 0vw 0vh 13vw;
+  font-weight: bolder;
 }
 
-body {
-  width: 100vw;
-  height: 100vh;
-}
-
-.home ul {
-  height: 57.5vh;
-  width: 100%;
-  border-radius: 1.3vh;
+.warning .containerbox {
   display: flex;
   flex-wrap: wrap;
-  background-image: url("https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
+  height: 20vh;
+  width: 20vw;
+  margin: 10vh 0vw 0vh 18vw;
+}
+.warning .containerbox input {
+  height: 4vh;
+  width: 13vw;
+  font-size: 1rem;
+}
+.warning .containerbox input:focus {
+  outline: none;
+}
+.warning .containerbox button {
+  width: 13vw;
+  height: 4vh;
+  background-color: #505ca4;
+  border: 2px solid white;
+  color: white;
+  border-radius: 1vh;
+  transition: transform 0.5s;
+}
+.logs ul {
+  width: 100%;
+  height: 47.5vh;
+  border-bottom-left-radius: 1.3vh;
+  border-bottom-right-radius: 1.3vh;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+.logs ul li {
   margin: 0;
   padding: 0;
-}
-.home ul li {
   list-style: none;
-  height: 49.5%;
-  width: 32.9%;
-  margin: 0.1vh 0.1vw 0.1vh 0.1vw;
-  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-  background-color: rgba(255, 255, 255, 0.904);
+  width: 100%;
+  height: 34%;
+  border-top: 1px solid #505ca4;
+  border-bottom: 3px solid #505ca4;
+}
+.logs ul::-webkit-scrollbar {
+  width: 4px;
+}
+.logs ul::-webkit-scrollbar-thumb {
+  background-color: #505ca4;
+  border-top-right-radius: 4vh;
+  border-bottom-right-radius: 10vh;
+}
+
+.occurrence {
+  width: 49.8vw;
+}
+.occurrence ul {
+  height: 47.5vh;
+  width: 100%;
   display: flex;
 }
-.home ul li:hover {
-  cursor: pointer;
+.occurrence ul li {
+  width: 33%;
+  height: 50%;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
   border: 2px solid #505ca4;
+  margin: 10vh 2vw 0vh 2vh;
+  transition: transform 0.5s;
 }
-.home ul li:nth-child(1) {
-  border-top-left-radius: 1.3vh;
+.occurrence ul li:hover {
+  transform: scale(1.05);
+  cursor: pointer;
 }
-.home ul li:nth-child(3) {
-  border-top-right-radius: 1.3vh;
-}
-.home ul li:nth-child(4) {
-  border-bottom-left-radius: 1.3vh;
-}
-.home ul li:nth-child(6) {
-  border-bottom-right-radius: 1.3vh;
-}
-.home ul li h1 {
-  font-size: 1.5rem;
-  margin: 13vh 0vw 0vh 1vw;
-  color: #535151;
-  font-family: roboto;
-}
-.home ul li .fas {
-  font-size: 6rem;
-  margin: 10vh 0vw 0vh 2vw;
+.occurrence ul li .fas {
+  font-size: 5rem;
   color: #505ca4;
+  margin-top: 5vh;
+  margin-bottom: 2vh;
+}
+.occurrence ul li p {
+  font-weight: 350;
 }
 
 /*# sourceMappingURL=main.css.map */

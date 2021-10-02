@@ -16,7 +16,7 @@ function closeAll(){
     $('.home').hide()
     $('.cars').hide()
     $('.registers').hide()
-    $('.divisions').hide() 
+    $('.logs').hide() 
     $('.prision').hide()
     $('.fine').hide()
     $('.warning').hide()
@@ -29,6 +29,7 @@ function closeAll(){
     $('.resultdist').hide()
     $('.resultsearch').hide()
     $('.contentmain').hide()
+    $('.occurrence').hide()
     $('.a').html('')
     $('.b').html('')
     $('.c').html('')
@@ -38,6 +39,8 @@ function closeAll(){
     $('.g').html('')
     $('.h').html('')
     $('.j').html('')
+    $('.soma').html('0')
+    $('.finev').html('0')
 }
 
 function home(){
@@ -56,9 +59,9 @@ function cars(){
     $('.cars').show(200)
     $('.searchboxcar').show(200)
 }
-function divisions(){
+function logs(){
     closeAll()
-    $('.divisions').show(200)
+    $('.logs').show(200)
 }
 
 function prision(){
@@ -68,7 +71,7 @@ function prision(){
         crimeslist[i].crimes.map((element,index)=>{
             $(`.${crimeslist[i].class}`).append(`
                 <div class="form-check form-switch">
-                    <input onclick="update()" class="${element.id} form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                    <input onclick="updateSentence()" class="${element.id} form-check-input" type="checkbox" id="flexSwitchCheckDefault">
                     <label class="form-check-label" for="flexSwitchCheckDefault">${element.name}</label>
                 </div>
             `)
@@ -80,7 +83,7 @@ function prision(){
 let sentence 
 let finev 
 
-function update(){
+function updateSentence(){
     sentence = 0
     finev = 0
     for(i = 0; i < 8; i++){
@@ -183,4 +186,11 @@ function ResultSearchCar(){
     $('.searchboxcar').hide()
     $('.resultcar').show(200)
     $('.resultsearch').show(200)    
+}
+
+/* OCORRENCIAS */
+
+function occurrence(){
+    closeAll()
+    $('.occurrence').show(200)
 }

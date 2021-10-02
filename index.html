@@ -28,9 +28,17 @@
                                 <i class="fas fa-car"></i>
                                 <h1>Veiculos</h1>
                             </li>
-                            <li onclick="divisions()">
+                            <li onclick="logs()">
                                 <i class="fas fa-clock"></i>
                                 <h1>Recentes</h1>
+                            </li>
+                            <li onclick="occurrence()">
+                                <i class="fas fa-file"></i>
+                                <h1>Ocorrências</h1>
+                            </li>
+                            <li onclick="xd()">
+                                <i class="fas fa-search"></i>
+                                <h1>Procurados</h1>
                             </li>
                             <li onclick="prision()">
                                 <i class="fas fa-user-lock"></i>
@@ -40,7 +48,7 @@
                                 <i class="fas fa-file-alt"></i>
                                 <h1>Multar</h1>
                             </li>
-                            <li onclick="warnings()">
+                            <li onclick="warning()">
                                 <i class="fas fa-exclamation-triangle"></i>
                                 <h1>Aviso</h1>
                             </li>
@@ -220,12 +228,54 @@
                             </div>
                         </main>
                     </div>
-                    <div class="divisions app">
+                    <div class="logs app">
                         <header>
                             <i onclick="home()" class="fas fa-home"></i>
                             <h1>Recentes</h1>
                             <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
                         </header>
+                        <ul>
+                            <li>
+                                <header>
+                                    <div class="type"></div>
+                                    <div class="officcer"></div>
+                                </header>
+                            </li>
+                            <li>ss</li>
+                            <li>ss</li>
+                        </ul>
+                    </div>
+                    <div class="occurrence app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Ocorrências</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        <main>
+                            <ul>
+                                <li>
+                                    <i class="fas fa-file-invoice"></i>
+                                    <p>Ocorrências ativas</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file"></i>
+                                    <p>Ocorrências arquivadas</p>
+                                </li>
+                                <li>
+                                    <i class="fas fa-file-signature"></i>
+                                    <p>Registrar ocorrência</p>
+                                </li>
+                            </ul>
+                        </main>
+                        
+                    </div>
+                    <div class="xd app">
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Recentes</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        
                     </div>
                     <div class="prision app pf">
                         <header>
@@ -336,7 +386,16 @@
                         </div>
                     </div>
                     <div class="warning app">
-                        <button onclick="home()">voltar</button>
+                        <header>
+                            <i onclick="home()" class="fas fa-home"></i>
+                            <h1>Aviso</h1>
+                            <img src="https://cdn.discordapp.com/attachments/717934456131813418/879821910219837470/Police-Logo.png" alt="">
+                        </header>
+                        <div class="containerbox">
+                            <input type="text" name="" id="" placeholder="Passaporte">
+                            <input type="text" name="" id="" placeholder="Motivo">
+                            <button>Aplicar</button>
+                        </div>
                     </div>
                     <!--TABLET CONTENT -->
                     </div>

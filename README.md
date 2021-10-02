@@ -9,5 +9,6 @@
 
 <h3>Próximos Passos</h3>
 
-<p>- Atualizar o JSON do código penal</p>
-<p>- Finalizar prender, multar e aviso.</p>
+<p>- Adicionar novos métodos de penas</p>
+<p>- Finalizar o recentes.</p>
+<p>- Server-side.</p>
